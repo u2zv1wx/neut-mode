@@ -23,9 +23,9 @@
      (modify-syntax-entry ?. "w" syntax-table)
      syntax-table))
   (setq font-lock-defaults
-        `(,`((,(regexp-opt '("array" "arrow" "enum" "exists" "forall" "hom" "pi" "product" "sigma" "struct" "tau" "type" "universe" "Π" "∑") 'symbols)
+        `(,`((,(regexp-opt '("array" "arrow" "enum" "exists" "forall" "hom" "Pi" "product" "sigma" "struct" "tau" "type" "universe" "Π" "∑") 'symbols)
              . font-lock-type-face)
-            (,(regexp-opt '("apply" "array-elimination" "array-introduction" "assume" "construct" "corollary" "default" "define" "destruct" "end" "ensure" "enum-elimination" "enum-introduction" "erase" "fix" "if" "include" "inductive" "irreducible" "lambda" "lemma" "let" "notation" "constant" "pi-elimination" "pi-introduction" "proposition" "record" "section" "sigma-elimination" "sigma-introduction" "statement" "struct-elimination" "struct-introduction" "switch" "theorem" "tuple" "unuse" "use" "with" "witness" "λ") 'symbols)
+            (,(regexp-opt '("apply" "array-elimination" "array-introduction" "assume" "construct" "corollary" "default" "define" "destruct" "end" "ensure" "enum-elimination" "enum-introduction" "erase" "fix" "if" "include" "inductive" "irreducible" "lambda" "lemma" "let" "notation" "constant" "Π-elimination" "Π-introduction" "proposition" "record" "section" "sigma-elimination" "sigma-introduction" "statement" "struct-elimination" "struct-introduction" "switch" "theorem" "tuple" "unuse" "use" "with" "witness" "λ") 'symbols)
              . font-lock-keyword-face)
             (,(regexp-opt '("introspect" "question" "splice") 'symbols)
              . font-lock-builtin-face)
