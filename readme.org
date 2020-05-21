@@ -1,5 +1,5 @@
 #+TITLE: neut-mode
-An Emacs major mode for Neut. Currently this major mode is only for syntax highlighting.
+An Emacs major mode for Neut. Currently this major mode is only for syntax highlighting and commenting.
 
 * Usage
 A possible scenario:
@@ -8,11 +8,15 @@ $ git clone https://github.com/u2zv1wx/neut-mode path/to/some/dir
 $ mkdir -p ~/.emacs.d/site-lisp
 $ ln -s ~/.emacs.d/site-lisp path/to/some/dir/neut-mode.el
 #+END_SRC
-Then in your =init.el=:
+with the following =init.el=:
 #+BEGIN_SRC elisp
+;; ...
+
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
 (autoload 'neut-mode "neut-mode" nil t)
 
 (add-to-list 'auto-mode-alist '("\\.neut$" . neut-mode))
+
+;; ...
 #+END_SRC
