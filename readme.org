@@ -1,12 +1,12 @@
 #+TITLE: neut-mode
 An Emacs major mode for Neut. Currently this major mode is only for syntax highlighting and commenting.
 
-* Usage
+* Installation
 A possible scenario:
 #+BEGIN_SRC shell
 $ git clone https://github.com/u2zv1wx/neut-mode path/to/some/dir
 $ mkdir -p ~/.emacs.d/site-lisp
-$ ln -s ~/.emacs.d/site-lisp path/to/some/dir/neut-mode.el
+$ ln -s ~/.emacs.d/site-lisp/neut-mode.el path/to/some/dir/neut-mode.el
 #+END_SRC
 with the following =init.el=:
 #+BEGIN_SRC elisp
