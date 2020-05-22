@@ -8,15 +8,11 @@ $ git clone https://github.com/u2zv1wx/neut-mode path/to/some/dir
 $ mkdir -p ~/.emacs.d/site-lisp
 $ ln -s path/to/some/dir/neut-mode.el ~/.emacs.d/site-lisp/neut-mode.el
 #+END_SRC
-with the following =init.el=:
+with the following code in your =init.el=:
 #+BEGIN_SRC elisp
-;; ...
-
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
 (autoload 'neut-mode "neut-mode" nil t)
 
 (add-to-list 'auto-mode-alist '("\\.neut$" . neut-mode))
-
-;; ...
 #+END_SRC
